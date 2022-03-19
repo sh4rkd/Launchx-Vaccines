@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --principal-background: white;
+    --principal-color: rgb(40, 40, 114);
+    --principal-text-color: rgb(86, 109, 132);
+    --secondary-color: rgb(225, 243, 255);
+    --special-color: rgb(201, 187, 0);
+    --special-background: rgb(244, 255, 214);
+    --title-color: rgb(61, 61, 192);
+
+
+    --main-button-color: rgb(62,79,255);
+    --main-disable-button-color: var(--secondary-color);
+    --main-button-gradient: 90deg, rgba(62,79,255,1) 0%, rgba(43,48,179,1) 100%;
+    --mainecond-button-color: rgb(83,116,255);
+    --second-button-gradient: 90deg, rgba(83,116,255,1) 0%, rgba(67,72,198,1) 100%;
+    --third-button-color: rgb(178,193,255);
+    --third-button-gradient: 90deg, rgba(178,193,255,1) 0%, rgba(83,114,233,1) 100%;
+
+    --box-shadow-1: rgba(0, 26, 255, 0.12) 0px -5px 20px, rgba(0, 26, 255, 0.1) 0px 10px 6px -5px, rgba(0, 26, 255, 0.17) 0px 5px 13px -5px, rgba(10, 37, 64, 0.1) 0px -2px 6px 0px inset;
+    --box-shadow-2:
+    rgba(255, 255, 255, 1) 0px 0px 0px 2px,
+    rgb(182, 229, 255) 0px 12px 20px -4px;
+    rgba(255, 255, 255, 1) 0px 0px 0px 2px,
+    rgb(224, 236, 189, 1) 0px 12px 20px -4px;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.link-dark {
+    color: rgb(88, 88, 88);
+}
+
+.bold {
+    font-weight: 700;
+}
+p {
+    color: var(--principal-text-color)
+}
+p.important{
+    font-size: 1.1rem;
+}
+p.subhead{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;;
+}
+
+h1, h2, h3, .tag__text--1 {
+    color: var(--principal-color);
+}
+h1,h2 {
+    font-weight: 900;
+}
+h1 {
+    font-size: calc(2rem + 1.8vw);
+}
+h3 {
+    font-size: large;
+    font-weight: 600;
+}
+.tag__text--1 {
+    font-weight: 600;
+    font-size: small;
+}
+
+.main-gap {
+    margin-bottom: 7rem;
+}
+
+.main {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
+    position: relative;
+    height: 100vh;
+}
+.main__container{
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+.main__info {
+    position: relative;
+    top: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
+    padding-bottom: 2rem;
+}
+.main__image--container {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    background-color: #187BEE;
+    background-image: url('./../images/nurse_1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main__image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.vaccination__container {
+    position: relative;
+    top: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
+}
+.vaccination__form {
+    position: relative;
+
+    background-color: white;
+    box-shadow: rgba(0, 47, 255, 0.15) 0px 10px 25px -5px,
+    rgba(0, 47, 255, 0.08) 0px 3px 10px -5px;
+
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(100vw - 1rem*2);
+}
+.vaccination__form>div{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+.vaccination__input-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.vaccination__input-group:last-child{
+    margin-bottom: 0rem;
+}
+.vaccination__input-group h3{
+    color: #566d84;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.vaccination__input-group input,
+.vaccination__input-group select
+{
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px -4px;
+    font-weight: 600;
+    color: rgb(40, 40, 114);
+}
+.vaccination__input-group input:hover,
+.vaccination__input-group input:focus,
+.vaccination__input-group select:hover,
+.vaccination__input-group select:focus {
+    box-shadow: rgb(40, 40, 114, 0.3) 0px 5px 5px -2px;
+}
+
+.vaccines_logos {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.vaccines_logos img{
+    position: relative;
+    filter: saturate(0.2) contrast(0.5) opacity(0.15);
+    transform: scale(90%);
+    margin: 1rem;
+}
+.vaccines_logos img:nth-child(1){
+    height: 70px;
+}
+.vaccines_logos img:nth-child(2){
+    height: 32px;
+}
+.vaccines_logos img:nth-child(3){
+    height: 72px;
+}
+.vaccines_logos img:nth-child(4){
+    height: 44px;
+}
+
+.info-container {
+    padding: 1.5rem 1rem;
+}
+.preparations__image--container {
+    background-color: #187BEE;
+    background-image: url('./../images/nurse_2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+}
+.accordion-body {
+    box-shadow: rgb(176 210 248 / 50%) 0px 13px 20px -12px;
+    font-size: 0.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: var(--principal-text-color);
+}
+.accordion-button {
+    box-shadow:rgba(176, 210, 248, 0.7) 0px 0px 10px -5px;
+    color: rgb(40, 40, 114);
+    font-weight: 600;
+}
+.accordion-button:hover{
+    box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
+}
+.accordion-button:focus {
+    box-shadow:rgba(176, 210, 248, 0.7) 0px 0px 10px -5px;
+}
+.accordion-button::after {
+    background-color: rgb(225, 243, 255);
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="%23566d84" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') !important;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: rgb(40, 40, 114);
+    box-shadow:rgba(176, 210, 248, 0.7) 0px 0px 10px -5px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="%233d3dc0" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') !important;
+    box-shadow: inset 1px 1px 3px 2px rgba(0, 47, 255, 0.05);
+}
+.accordion-button:not(.collapsed) .icon_box {
+    box-shadow: inset -1px -1px 3px 2px rgba(0, 47, 255, 0.05);
+}
+
+
+.contact_image--container {
+    background-color: #187BEE;
+    background-image: url('./../images/nurse_3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 15px -15px rgb(85, 85, 85);
+}
+
+.targets-container>section>div{
+    padding: 1.2rem;
+    height: 100%;
+    box-shadow:rgba(176, 210, 248, 0.7) 0px 0px 10px -5px;
+    border-radius: 10px;
+}
+.targets-container>section>div:hover{
+    box-shadow: rgba(176, 210, 248, 0.5) 0px 30px 30px -10px;
+}
+
+.iconify{
+    color: #3D3DC0;
+}
+
+@media (min-width: 992px) {
+    header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
+
+
+.logo__title {
+    font-size: calc(1rem + 0.8vw);
+    color: var(--title-color);
+    font-weight: 900;
+    margin: 0;
+}
+
+
+.btn-primary,
+.targets-container>section>div:hover .btn-primary {
+    padding: 0.6rem 1.2rem;
+    box-shadow: var(--box-shadow-1);
+    border: none;
+    background: var(--main-button-color);
+    background: -moz-linear-gradient(var(--main-button-gradient));
+    background: -webkit-linear-gradient(var(--main-button-gradient));
+    background: linear-gradient(var(--main-button-gradient));
+    color: white;
+}
+.btn-primary:hover,
+.targets-container>section>div .btn-primary:hover {
+    border: none;
+    background: var(--second-button-color);
+    background: -moz-linear-gradient(var(--second-button-gradient));
+    background: -webkit-linear-gradient(var(--second-button-gradient));
+    background: linear-gradient(var(--second-button-gradient));
+}
+.btn-primary:focus,
+.targets-container>section>div .btn-primary:focus {
+    box-shadow: rgba(0, 26, 255, 0.22) 0px -5px 10px, rgba(0, 26, 255, 0.22) 0px 10px 6px -5px, rgba(0, 26, 255, 0.27) 0px 5px 10px -5px, rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset !important;
+    border: none;
+}
+.btn-primary:active,
+.targets-container>section>div .btn-primary:active {
+    background: var(--third-button-color);
+    background: -moz-linear-gradient(var(--third-button-gradient));
+    background: -webkit-linear-gradient(var(--third-button-gradient));
+    background: linear-gradient(var(--third-button-gradient));
+    border: none;
+}
+
+.targets-container .btn-primary{
+    box-shadow: none;
+    font-weight: 600;
+    background: var(--main-disable-button-color);
+    color: var(--title-color);
+}
+.targets-container>section>div .btn-primary:focus {
+    background: var(--main-button-color);
+    color: white;
+}
+
+.icon_box {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin-right: 0.6rem;
+
+    font-size: small;
+    min-width: 25px;
+    min-height: 25px;
+    
+    max-width: 25px;
+    max-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_box.small {
+    font-size: smaller;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+}
+.icon_box.big {
+    margin-right: 0.8rem;
+    font-size: x-large;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
+.icon_box:hover,
+.targets-container>section>div:hover .icon_box,
+.accordion-button:hover .icon_box{
+    box-shadow: var(--box-shadow-2);
+}
+.icon_box > i {
+    color: var(--title-color);
+}
+
+.icon_box.special {
+    background-color: var(--special-background);
+}
+.icon_box.special:hover{
+    box-shadow: var(--box-shadow-3);
+}
+.icon_box.special > i {
+    color: var(--special-color)
+}
+
+.footer{
+    background: #EEF3FF;
+}
+
+@media (min-width: 453px) {
+    .vaccines_logos img:nth-child(2){
+        top: -17px;
+    }
+}
+
+@media (min-width: 560px) {
+    .vaccines_logos img:nth-child(2){
+        /* Sinovac logo */
+        top: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        margin-bottom: 0px;
+    }
+    .main__container,
+    .info-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .main__info {
+        top: calc( (1.5rem * 2) + (0.6rem * 2) + 2rem);
+    }
+    .main__image--container{
+        position: relative;
+    }
+    .vaccination__container {
+        top: unset;
+        position: absolute;
+        bottom: 1.5rem;
+    }
+    .vaccination__form {
+        width: calc(100vw - 8rem - 15px);
+    }
+    .vaccination__form>div{
+        display: flex;
+        flex-direction: unset;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    .vaccination__input-group {
+        width: 28%;
+        padding-right: 1em;
+        align-content: flex-end;
+    }
+    .vaccination__input-group:last-child {
+        width: 15%;
+        padding: 0;
+        margin: auto;
+    }
+    .vaccines_logos {
+        margin-top: 40px;
+    }
+    .vaccines_logos img:nth-child(3){
+        top: 17px;
+    }
+    .vaccines_logos img:nth-child(4){
+        top: 10px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .vaccination__form {
+        width: 75vw;
+    }
+    .main__info {
+        top: calc( (1.5rem * 2) + (0.6rem * 2) + 4rem);
+    }
+}

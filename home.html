@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5c83e3c70.js" crossorigin="anonymous"></script>
+    <title>Vaccination</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="navbar navbar-light navbar-expand-lg sticky-top justify-content-between px-4">
+        <a href="#" class="d-flex align-items-center col-auto mb-2 mb-md-0 text-dark text-decoration-none mx-2">
+            <h1 class="logo__title">Vaccination</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end text-center bold">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 link-dark">
+                            DataBase
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 link-dark">
+                            Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 link-dark">
+                            News
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 link-dark">
+                            Regulation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-primary mx-2">
+                            Hoax Buster
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+    </header>
+
+    <main >
+        <section class="main container-fluid" id="main_view">
+            <div class="row g-0">
+                <section class="main__container col-12 col-md-6">
+                    <div class="main__info">
+                        <h1>
+                            Fight Virus With Vaccines
+                        </h1>
+                        <p class="important">
+                            Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected    
+                        </p>
+                        <div class="tag__text--1 d-flex align-items-center justify-content-evenly px-4 mt-4">
+                            <div class="d-flex justify-content-center align-items-center me-2">
+                                <div class="icon_box special">
+                                    <i class="bi-shield-fill-check"></i>                                
+                                </div>
+                                <div>
+                                    <p class="m-auto">Best protection</p>
+                                </div>                          
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center ms-2">
+                                <div class="icon_box special">
+                                    <i class="bi-star-fill"></i>
+                                </div>
+                                <div>
+                                    <p class="m-auto">Selected Vaccines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vaccination__container">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="icon_box">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <p class="m-auto">Schedule your vaccinations:</p>
+                            </div>   
+                        </div>
+                        <form action="" class="vaccination__form container-fluid">
+                            <div>
+                                <div class="vaccination__input-group">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div class="icon_box">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-auto">Location</p>
+                                        </div>  
+                                    </div>
+                                    <select class="form-select" name="vaccination_location" id="vaccination_location">
+                                        <option value="default" selected>Select Location</option>
+                                        <option value="tepic">Tepic</option>
+                                        <option value="xalisco">Xalisco</option>
+                                    </select>
+                                </div>
+                                <div class="vaccination__input-group">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div class="icon_box">
+                                            <i class="bi bi-calendar-week-fill"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-auto">Date</p>
+                                        </div>  
+                                    </div>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="vaccination__input-group">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div class="icon_box">
+                                            <i class="fa-solid fa-syringe"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-auto">Vaccine Type</p>
+                                        </div>   
+                                    </div>
+                                    <select class="form-select" name="vaccination_location" id="vaccination_location">
+                                        <option value="default" selected>Select Vaccine</option>
+                                        <option value="pfizer">Pfizer</option>
+                                        <option value="moderna">Moderna</option>
+                                        <option value="astrazeneca">AstraZeneca</option>
+                                    </select>
+                                </div>
+                                <div class="vaccination__input-group d-grid">       
+                                    <a type="button" class="btn btn-primary btn-block">
+                                        Submit
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="main__image--container col-12 col-md-6">
+                </div>
+            </div>
+        </section>
+  
+        <section class="vaccines_logos  main-gap container-fluid" id="vaccines_logos">
+            <img class="img-fluid" src="./images/logo_astrazeneca.png" alt="Logo AstraZeneca">
+            <img class="img-fluid" src="./images/logo_sinovac.png" alt="Logo Sinovac">
+            <img class="img-fluid" src="./images/logo_pfizer.png" alt="Logo Pfizer">
+            <img class="img-fluid" src="./images/logo_moderna.png" alt="Logo Moderna">
+        </section>
+    
+        <section class="container main-gap"  id="vaccination_beneficts">
+            <div class="row g-0 mb-4">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <h2>
+                        Why should I vaccine?
+                    </h2>
+                    <p class="important">
+                        In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:
+                    </p>
+                </div>
+            </div>
+            <section class="targets-container row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                <section class="col">
+                    <div>
+                        <h3 class="d-grid g-2">
+                            <div class="icon_box big mb-3">
+                                <i class="fa-solid fa-virus-covid-slash"></i>
+                            </div>
+                            <div>
+                                <p class="m-auto">Minimize the spread of viruses</p>
+                            </div> 
+                        </h3>
+                        <p>
+                            Vaccine has been proven effective to prevent someone from getting infected with Coronavirus.
+                        </p>
+                    </div>
+                </section>
+                <section class="col">
+                    <div>
+                        <h3 class="d-grid g-2">
+                            <div class="icon_box big mb-3">
+                                <i class="bi bi-shield-fill-plus"></i>
+                            </div>
+                            <div>
+                                <p class="m-auto">Forming antibodies</p>
+                            </div> 
+                        </h3>
+                        <p>
+                            COVID-19 vaccine proven to help shape antibody response for immune system.
+                        </p>
+                    </div>
+                </section>
+                <section class="col">
+                    <div>
+                        <h3 class="d-grid g-2">
+                            <div class="icon_box big mb-3">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <p class="m-auto">Protecting people nearby</p>
+                            </div>  
+                        </h3>
+                        <p>
+                            The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us.
+                        </p>
+                    </div>
+                </section>
+                <section class="col">
+                    <div>
+                        <h3 class="d-grid g-2">
+                            <div class="icon_box big mb-3">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <p class="m-auto">Creating group immunity</p>
+                            </div> 
+                        </h3>
+                        <p>
+                            COVID-19 vaccination is also beneficial for creating group immunity or herd immunity.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        
+        <section class="container-fluid main-gap p-0" id="vaccination_preparations">
+            <div class="row g-0">
+                <section class="col-12 col-md-6 preparations__image--container">
+                    <!-- <img class="img-fluid" src="./images/face-mask-1.jpg" alt=""> -->
+                </section>
+                <section class="info-container col-12 col-md-6">
+                    <div class="text-center text-md-start">
+                        <h2>
+                            Preparations Before Vaccine
+                        </h2>
+                        <p class="important">
+                            the success of vaccines is strongly influenced by the 
+                            strength of the body's immune system. Therefore, there are 
+                            several things that can be tried to make the COVID-19 
+                            vaccine work:
+                        </p>
+                    </div>
+                    <section class="vaccine_info__preparations accordion accordion-flush" id="preparations_list">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panel-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-1-open" aria-expanded="true" aria-controls="panel-1-open">
+                                <div class="icon_box">
+                                    <span class="iconify" data-icon="bxs:shield-x"></span>
+                                </div>
+                                <div>
+                                    <p class="m-auto">Avoid alcoholic beverages</p>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="panel-1-open" class="accordion-collapse collapse" data-bs-parent="#preparations_list" aria-labelledby="panel-1">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit ad aliquid. Doloribus possimus consectetur consequuntur. Magni harum quod molestiae? Quisquam, ullam voluptas facilis assumenda officiis iusto recusandae porro quidem!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panel-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-2-open" aria-expanded="true" aria-controls="panel-2-open">
+                                <div class="icon_box">
+                                    <span class="iconify" data-icon="ant-design:close-square-filled"></span>
+                                </div>
+                                <div>
+                                    <p class="m-auto">Avoid stress</p>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="panel-2-open" class="accordion-collapse collapse" data-bs-parent="#preparations_list" aria-labelledby="panel-2">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eligendi explicabo quia consequatur, minima tempora cupiditate? Asperiores sunt necessitatibus officia quaerat laudantium nesciunt assumenda libero rerum ea! Laboriosam, qui animi?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panel-3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-3-open" aria-expanded="true" aria-controls="panel-3-open">
+                                <div class="icon_box">
+                                    <span class="iconify" data-icon="ic:round-bar-chart"></span>
+                                </div>                            
+                                <div>
+                                    <p class="m-auto">Eat healthy food</p>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="panel-3-open" class="accordion-collapse collapse" data-bs-parent="#preparations_list" aria-labelledby="panel-3">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolore rem! Iste neque aperiam sint suscipit minus fugit molestias ratione molestiae inventore consequuntur amet quis, quisquam sequi aliquid, a voluptatibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panel-4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-4-open" aria-expanded="true" aria-controls="panel-4-open">
+                                <div class="icon_box">
+                                    <span class="iconify" data-icon="akar-icons:check-box-fill"></span>
+                                </div>
+                                <div>
+                                    <p class="m-auto">Get enough food</p>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="panel-4-open" class="accordion-collapse collapse" data-bs-parent="#preparations_list" aria-labelledby="panel-4">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam labore eum suscipit totam hic qui maiores excepturi vero! Cumque accusamus quam earum aspernatur ratione asperiores omnis corporis debitis soluta iure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panel-5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-5-open" aria-expanded="true" aria-controls="panel-5-open">
+                                <div class="icon_box">
+                                    <span class="iconify" data-icon="typcn:heart-full-outline"></span>
+                                </div>
+                                <div>
+                                    <p class="m-auto">Exercise or physical activity</p>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="panel-5-open" class="accordion-collapse collapse" data-bs-parent="#preparations_list" aria-labelledby="panel-5">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius est, velit cupiditate doloremque tempora quod aperiam nulla magnam laudantium praesentium autem temporibus recusandae vero dolor illum reprehenderit qui adipisci.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        
+        <section class="container-fluid main-gap p-0" id="emergency_contact">
+            <div class="row g-0">
+                <section class="info-container col-12 col-md-6">
+                    <div class="text-center text-md-start">
+                        <h2>
+                            Emergency Contact
+                        </h2>
+                        <p class="important">
+                            Contact one of the contacts below if you or your family feel
+                            unwell and have similar symptoms such as Covid-19, make
+                            sure you also take care of yourself before reporting to us :
+                        </p>
+                    </div>
+                    <section class="targets-container row row-cols-1 row-cols-sm-2 g-4">
+                        <section class="col">
+                            <div class="d-grid g-1">                            
+                                <div class="d-flex g-2 align-items-center mb-4">
+                                    <div class="icon_box big">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="m-0">
+                                            Call
+                                        </h3>
+                                        <p class="subhead">021.123.145.14</p>
+                                    </div>
+                                </div>
+                                <a type="button" class="btn btn-primary">
+                                    Call Now
+                                </a>
+                            </div>
+                        </section>
+                        <section class="col">
+                            <div class="d-grid g-1">                            
+                                <div class="d-flex g-2 align-items-center mb-4">
+                                    <div class="icon_box big">
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="m-0">
+                                            Chat
+                                        </h3>
+                                        <p class="subhead">021.123.145.14</p>
+                                    </div>
+                                </div>
+                                <a type="button" class="btn btn-primary">
+                                    Chat Now
+                                </a>
+                            </div>
+                        </section>
+                        <section class="col">
+                            <div class="d-grid g-1">                            
+                                <div class="d-flex g-2 align-items-center mb-4">
+                                    <div class="icon_box big">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="m-0">
+                                            Video Call
+                                        </h3>
+                                        <p class="subhead">021.123.145.14</p>
+                                    </div>
+                                </div>
+                                <a type="button" class="btn btn-primary">
+                                    Video Call Now
+                                </a>
+                            </div>
+                        </section>
+                        <section class="col">
+                            <div class="d-grid g-1">                            
+                                <div class="d-flex g-2 align-items-center mb-4">
+                                    <div class="icon_box big">
+                                        <i class="fa-solid fa-envelope-open-text"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="m-0">
+                                            Message
+                                        </h3>
+                                        <p class="subhead">021.123.145.14</p>
+                                    </div>
+                                </div>
+                                <a type="button" class="btn btn-primary">
+                                    Message Now
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <section class="col-12 col-md-6 contact_image--container">
+                </section>
+            </div>
+        </section>      
+    </main>
+    
+    <footer class="page-footer font-small blue pt-4 footer">
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-8 mt-md-0 mt-3">
+            <h5 class="text-uppercase logo__title">Vaccination</h5>
+            <p>Our goal is to help the world free from the ongoing pandemic</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md mb-md-0 mb-3">
+            <h3 class="text-uppercase">About</h3>
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">About us</a>
+                </li>
+                <li>
+                <a href="#!">Features</a>
+                </li>
+                <li>
+                <a href="#!">News & Blog</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md mb-md-0 mb-3">
+    
+            <!-- Links -->
+            <h3 class="text-uppercase">Company</h3>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">How We Work?</a>
+                </li>
+                <li>
+                <a href="#!">Capital</a>
+                </li>
+                <li>
+                <a href="#!">Security</a>
+                </li>
+            </ul>
+    
+            </div>
+
+            <div class="col-md mb-md-0 mb-3">
+    
+                <!-- Links -->
+                <h3 class="text-uppercase">Company</h3>
+        
+                <ul class="list-unstyled">
+                    <li>
+                    <a href="#!">How We Work?</a>
+                    </li>
+                    <li>
+                    <a href="#!">Capital</a>
+                    </li>
+                    <li>
+                    <a href="#!">Security</a>
+                    </li>
+                </ul>
+        
+                </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>©2021 Vaccination, All rights reserved</p>            
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
